@@ -1,30 +1,20 @@
-@media (max-width: 1030px) {
-    .navigation-wrapper > .center-column {
-        width: 300px
+@media (max-width: 1150px) {
+    .page-container > .content-wrapper {
+        width: 1000px;
+    }
+
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        width: 900px;
     }
 }
 
 @media (max-width: 980px) {
-    .navigation-wrapper > .left-column {
-        display: flex;
-        flex-direction: column;
+    .page-container > .content-wrapper {
+        width: 1000px;
     }
 
-    .navigation-wrapper > .right-column {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .navigation-wrapper > .right-column > .contact-icon i {
-        margin-bottom: 5px;
-    }
-
-    .links-wrapper {
-        margin-right: 20px;
-    }
-
-    .navigation-wrapper > .left-column > .icon i {
-        margin-bottom: 5px;
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        width: 800px;
     }
 
     .hero-section > .top-heading {
@@ -62,20 +52,13 @@
 }
 
 @media (max-width: 850px) {
-    .navigation-wrapper > .right-column > .contact-icon i {
-        font-size: 1.5em;
+
+    .page-container > .content-wrapper {
+        width: 700px;
     }
 
-    .navigation-wrapper > .left-column > .icon i {
-        font-size: 1.5em;
-    }
-    .navigation-wrapper > .left-column > .contact-hours-wrapper > .phone {
-        font-size: 0.8em;
-        margin-top: 5px;
-    }
-
-    .navigation-wrapper > .left-column > .contact-hours-wrapper > .hours {
-        font-size: 0.7em;
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        width: 700px;
     }
 
     .links-wrapper > .nav-link a {
@@ -84,83 +67,34 @@
 }
 
 @media (max-width: 750px) {
-    .navigation-wrapper > .center-column {
-        width: 300px
+
+    .page-container > .content-wrapper {
+        width: 700px;
     }
 
-    .navigation-wrapper > .right-column {
-        margin-left: 10px;
-    }
-
-    .navigation-wrapper > .center-column > .banner-image img {
-        width: 80px;
-        height: 100%;
-    }
-
-    .navigation-wrapper > .right-column > .contact-icon i {
-        font-size: 1.2em;
-    }
-
-    .navigation-wrapper > .left-column > .icon i {
-        font-size: 1.2em;
-    }
-    .navigation-wrapper > .left-column > .contact-hours-wrapper > .phone {
-        font-size: 0.7em;
-        margin-top: 5px;
-    }
-
-    .navigation-wrapper > .left-column > .contact-hours-wrapper > .hours {
-        font-size: 0.5em;
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        width: 600px;
     }
 
     .links-wrapper > .nav-link a {
         font-size: 0.5em;
     }
-
-    .navigation-wrapper > .right-column > .address-wrapper a {
-        font-size: 0.7em;
-    }
 }
 
 @media (max-width: 615px) {
-    .navigation-wrapper {
-        flex-direction: column;
-        height: 100%;
+
+    .page-container > .content-wrapper {
+        width: 500px;
     }
 
-    .navigation-wrapper > .left-column {
-        order: 2;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .navigation-wrapper > .center-column {
-        order: 1;
-        width: 100%;
-    }
-
-    .navigation-wrapper > .right-column {
-        order: 3;
-        margin-top: 15px;
-        margin-left: 0px;
-    }
-
-    .navigation-wrapper > .left-column > .icon {
-        margin-right: 0px;
-    }
-
-    .navigation-wrapper > .right-column > .contact-icon {
-        margin-left: 0px;
-    }
-
-    .navigation-wrapper > .right-column > .address-wrapper a {
-        text-align: center;
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        width: 500px;
     }
 
     .links-wrapper {
         flex-direction: column;
         margin-bottom: 20px;
+        margin-right: 0;
     }
 
     .links-wrapper > .nav-link {
@@ -193,12 +127,12 @@
         height: 100%;
     }
 
-    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
-        flex-direction: column;
+    .links-wrapper {
+        align-items: center;
     }
 
-    .skewed-header > .header-bg {
-        background-size: 550px;
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        flex-direction: column;
     }
 
     .page-container {
@@ -235,5 +169,12 @@
 
     .form textarea {
         padding: 1.5rem 0rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .skewed-header-content > .links-wrapper > .nav-link {
+        margin-top: 8px;
+        margin-bottom: 0;
     }
 }
