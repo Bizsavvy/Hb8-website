@@ -1,13 +1,19 @@
 .btn {
     background-color: #0079ED;
-    color: #02213E;
+    color: #ffffff;
     font-size: 1.25em;
     padding: 10px 25px;
     border: 1px solid #0079ED;
-    border-radius: 2px;
+    border-radius: 30px;
     outline: none;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #02213e;
+    border: 1px solid #02213e;
+    color: #5cc1ff;
 }
 
 .btn:active {

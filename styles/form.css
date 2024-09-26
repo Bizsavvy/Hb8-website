@@ -1,58 +1,66 @@
-.form > .form-group {
+.form {
+    width: 100%;
+}
+
+.form > .mb-3 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.form input {
+.mb-3 input {
     font-size: 1.5rem;
     font-family: inherit;
     color: inherit;
-    padding: 1.5rem 2rem;
-    border-radius: 2px;
     border: none;
-    border-bottom: 3px solid #02213E;
+    border-radius: 0;
+    border-bottom: 3px solid #02213E !important;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
     width: 100%;
     display: block;
-    transition: all 0.3s;
+    box-sizing: border-box;
 }
 
-.form input:focus {
+.mb-3 input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #0079ED;
 }
 
-.form textarea {
-    margin-top: 20px;
-    width: 100%;
+.mb-3 textarea {
     height: 250px;
     border-radius: 3px;
     border: 3px solid #02213E;
-    font-size: 1.5rem;
     font-family: inherit;
     color: color;
     padding: 1.5rem 2rem;
+    margin-top: 20px;
+    width: 100%;
     transition: all 0.3s;
+    font-size: 1.5rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    resize: none;
 }
 
-.form textarea:focus {
+.mb-3 textarea:focus {
     outline: none;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
     border: 3px solid #0079ED;
 }
 
-.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+.mb-3 input::-webkit-input-placeholder, .mb-3 textarea::-webkit-input-placeholder {
     color: #02213E;
 }
 
-.form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder {
-    color: transparent;
+.mb-3 input:focus::-webkit-input-placeholder, .mb-3 textarea:focus::-webkit-input-placeholder {
+    color: transparent !important;
 }
 
-.form label {
+.form-label {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-left: 2rem;
+    margin-left: 2rem; 
     margin-top: 0.7rem;
     display: block;
     transition: all 0.3s;
@@ -61,7 +69,8 @@
     opacity: 0;
 }
 
-.form input:focus + label, .form textarea:focus + label {
+
+.mb-3 input:focus + .form-label, .mb-3 textarea:focus + .form-label {
     opacity: 1;
     visibility: visible;
     transform: translateY(1rem);

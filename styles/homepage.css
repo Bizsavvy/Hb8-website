@@ -26,9 +26,9 @@
     border-radius: 5px;
 }
 
-/* Features section styles */
+/* Features section styles*/
 .features-section {
-    height: 400px;
+    height: 500px;
     background-image: url(../images/backgrounds/Features.png);
     background-color: #0079ED;
     border-top: 10px solid white;
@@ -41,14 +41,17 @@
 }
 
 .features-section > .columns-wrapper {
-    width: 1000px;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .features-section > .columns-wrapper > .column {
     padding: 10px;
-    margin: 30px;
+    margin: 20px;
     text-align: center;
     border-bottom: 5px solid transparent;
     border-radius: 10px;
@@ -62,12 +65,12 @@
 .features-section > .columns-wrapper > .column :nth-child(1) {
     font-size: 3em;
     color: #02213E;
+    margin-bottom: 10px;
 }
 
 .features-section > .columns-wrapper > .column :nth-child(2) {
     font-size: 1.5em;
-    font-weight: 900;
-    height: 50px;
+    font-weight: 700;
     transition: 1s;
     color: #02213E;
 }

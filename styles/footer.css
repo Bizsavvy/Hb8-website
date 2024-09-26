@@ -24,12 +24,14 @@
     margin-right: 10px;
     font-size: 0.8em;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .footer > .footer-phone-hours > .hours {
     font-size: 0.8em;
     color: #ffffff;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .footer > .links-wrapper {
