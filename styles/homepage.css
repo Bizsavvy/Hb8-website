@@ -28,7 +28,7 @@
 
 /* Features section styles*/
 .features-section {
-    height: 500px;
+    height: 580px;
     background-image: url(../images/backgrounds/Features.png);
     background-color: #0079ED;
     border-top: 10px solid white;
@@ -36,49 +36,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Ubuntu Condensed", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
 }
 
-.features-section > .columns-wrapper {
-    width: 100%;
-    height: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.features-section > .columns-wrapper > .column {
+.features-section > .container > .row > .col-sm {
     padding: 10px;
-    margin: 20px;
-    text-align: center;
+    margin: 10px;
     border-bottom: 5px solid transparent;
     border-radius: 10px;
     transition: 1s;
 }
 
-.features-section > .columns-wrapper > .column:hover {
+.features-section > .container > .row > .col-sm:hover {
     border-bottom: 5px solid #02213E;
 }
 
-.features-section > .columns-wrapper > .column :nth-child(1) {
+.features-section > .container > .row > .col-sm :nth-child(1) {
     font-size: 3em;
     color: #02213E;
     margin-bottom: 10px;
 }
 
-.features-section > .columns-wrapper > .column :nth-child(2) {
+.features-section > .container > .row > .col-sm :nth-child(2) {
     font-size: 1.5em;
     font-weight: 700;
     transition: 1s;
     color: #02213E;
 }
 
-.features-section > .columns-wrapper > .column :nth-child(2):hover {
-    letter-spacing: 1px;
+.features-section > .container > .row > .col-sm :nth-child(2):hover {
+    letter-spacing: 0.3px;
 }
 
-.features-section > .columns-wrapper > .column :nth-child(3) {
+.features-section > .container > .row > .col-sm :nth-child(3) {
     letter-spacing: 2px;
 }
